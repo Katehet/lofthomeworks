@@ -8,10 +8,10 @@ function userCreator($names)
     $persName = $names[array_rand($names)];
     foreach ($names as $key => $name) {
         if ($persName == $name) {
-            $id = $key+1; // id = 0 нам не нужен
+            $id = $key + 1; // id = 0 нам не нужен
         }
     }
-    return ['id' =>$id, 'name' =>$persName, 'age' => rand(18, 45)];
+    return ['id' => $id, 'name' => $persName, 'age' => rand(18, 45)];
 }
 
 function averageAgeCounter(array $users)
